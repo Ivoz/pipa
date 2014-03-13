@@ -1,0 +1,15 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="api-version" value="2" />
+  <title>Links for {{ project }}</title>
+</head>
+<body>
+  {% for p in packages %}
+  <a href="{{ p.url }}#md5={{ p.md5 }}" rel="internal">{{ p.filename }}</a>
+  <br>
+  {% endfor %}
+</body>
+</html>

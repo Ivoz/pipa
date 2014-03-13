@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="api-version" value="2" />
+  <title>Pipa Index</title>
+</head>
+<body>
+  {% for project in projects %}
+  <a href="/simple/{{ project }}/">{{ project }}</a>
+  <br>
+  {% endfor %}
+</body>
+</html>

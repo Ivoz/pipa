@@ -1,0 +1,11 @@
+*.py[cdo]
+
+*.egg-info
+build
+dist
+
+packages
+pipa.cfg
+*.key
+*.crt
+*.pem
