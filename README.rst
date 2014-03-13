@@ -68,17 +68,18 @@ Usage
 Informations
 ------------
 
-**Q & A**
+Q & A
+~~~~~
 
 *Q: Can you add caching from PyPI?*
 
 A: I plan to in the future. Pull requests are very welcome. In the mean time,
-   also check out `devpi`_ and `pypimirror`_.
+also check out `devpi`_ and `pypimirror`_.
 
 *Q: Why another PyPI Developer Cache?*
 
-A: I couldn't see one that served over SSL out of the box, or that you could
-   upload to from setup.py
+A: I couldn't see one that served over SSL out of the box, and/or that you could
+upload to from setup.py
 
 *Q: Why Python 3 only?*
 
