@@ -12,23 +12,23 @@ NOTE: It does *not* currently fetch from PyPI for other packages.
 Usage
 -----
 
-0. Find help on any pipa command with `pipa <command> -h`.
+1. Find help on any pipa command with `pipa <command> -h`.
 
-1. Initialize
+2. Initialize
 
    run ``pipa init`` to create a packages folder, server certificates,
    and configuration file (``pipa.cfg``)
 
-2. Add a user
+3. Add a user
 
    use ``pipa user -a <username> <password>`` to add a new user to the confg
    that will be able to upload files to pipa.
 
-3. Run the server
+4. Run the server
 
    Run ``pipa serve`` to serve with configuration from your config.
 
-4. Configure pip and distutils
+5. Configure pip and distutils
 
    To install packages from pipa, pip needs to be given pipa's index url,
    and its cert bundle to authenticate with. This (``bundle.pem``) should be
@@ -58,7 +58,7 @@ Usage
    Making use of the values you entered in step 2. See `here <pypirc>`_ for
    more info.
 
-5. Upload packages using ``python setup.py sdist upload -r pipa``, and then
+6. Upload packages using ``python setup.py sdist upload -r pipa``, and then
    install them again when needed.
 
 
