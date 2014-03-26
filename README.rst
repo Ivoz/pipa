@@ -36,7 +36,7 @@ Usage
    The index url should be printed when starting the server.
    You can specify these with the flags ``--index-url=...`` and ``--cert=...``;
    or the environment variables ``PIP_INDEX_URL`` and ``PIP_CERT``;
-   or in a `configuration file <pip.conf>`_.
+   or in a `configuration file`_.
 
    pipa allows uploading packages. To configure this, edit your ``~/.pypirc``
    to look something like this::
@@ -55,15 +55,15 @@ Usage
     username: <username>
     password: <password>
 
-   Making use of the values you entered in step 2. See `here <pypirc>`_ for
+   Making use of the values you entered in step 2. See `here`_ for
    more info.
 
 6. Upload packages using ``python setup.py sdist upload -r pipa``, and then
    install them again when needed.
 
 
-.. _pip.conf: http://www.pip-installer.org/en/latest/user_guide.html#configuration
-.. _pypirc: http://docs.python.org/2/distutils/packageindex.html#the-pypirc-file
+.. _configuration file: http://www.pip-installer.org/en/latest/user_guide.html#configuration
+.. _here: http://docs.python.org/2/distutils/packageindex.html#the-pypirc-file
 
 Informations
 ------------
