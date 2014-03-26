@@ -43,5 +43,4 @@ setup(
             'pipa = pipa:main',
         ],
     },
-    setup_requires=['pbr'],
 )
