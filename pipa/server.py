@@ -119,6 +119,6 @@ def run_server(host=None, port=None, conf_file=None,
 
     cherrypy.tree.mount(root, '', config=app_config)
     # cherrypy.log.screen = False
-    print('Starting local pypi server %s/simple/' % cherrypy.server.base())
+    print('Starting local pypi server: %s/simple/' % cherrypy.server.base())
     cherrypy.engine.start()
     cherrypy.engine.block()
