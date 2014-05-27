@@ -86,14 +86,13 @@ def digest(password, conf=None):
     if conf is None:
         conf = cherrypy.request.app.root.pipa
 
-    password = ntob(password)
-    salt = ntob(conf['salt'])
+    p = ntob(password)
+    s = ntob(conf['salt'])
     digest = sha256(b'36'*16).digest()
 
     for i in range(5000):
-        password = sha256(password + digest).digest()
-        digest = sha256(digest + password + salt).digest()
-    return sha256(salt + digest).hexdigest()
+        digest = sha256(digest + s + p + digest).digest()
+    return sha256(digest + s + p + digest).hexdigest()
 
 
 class DistUtilsPart(Part):
