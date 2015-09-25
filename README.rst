@@ -14,14 +14,14 @@ Usage
 
 1. Find help on any pipa command with `pipa <command> -h`.
 
-2. Initialize
+2. Initialize your index
 
    run ``pipa init`` to create a packages folder, server certificates,
    and configuration file (``pipa.cfg``)
 
 3. Add a user
 
-   use ``pipa user -a <username> <password>`` to add a new user to the confg
+   use ``pipa user -a <username> <password>`` to add a new user to the config
    that will be able to upload files to pipa.
 
 4. Run the server
